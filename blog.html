@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://kit-pro.fontawesome.com/releases/latest/css/pro.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <title>Pawtnership | Blog Post</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar">
+        <h1 class="logo">
+          <span class="text-primary"><i class="fas fa-paw"></i>Paw</span
+          >Tnership
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cases">Cases</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Blog</h1>
+        <p>A true friend leaves paw prints on your heart</p>
+      </div>
+    </header>
+
+    <main>
+      <!-- Blog posts -->
+      <article class="flex-columns">
+        <dic class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/blog/blog1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-dark">
+              <h2>Help Your Little Ones Be Friends</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posted by
+                <strong>Greg Wilkson</strong> | April 19, 2020
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ratione rem laudantium harum totam animi quisquam ex vitae
+                deleniti! Iusto neque tempora repellat quasi ad, sit dolorem?
+                Quasi dolores optio fugit sapiente similique impedit obcaecati
+                quae.
+              </p>
+              <a href="post.html" class="btn btn-light"
+                ><i class="fas fa-chevron"></i> Read More</a
+              >
+            </div>
+          </div>
+        </dic>
+      </article>
+      <article class="flex-columns flex-reverse">
+        <dic class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/blog/blog2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>10 Best Tips On How To Travel With Your Pawesome Friend</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posted by
+                <strong>Katy Smith</strong> | April 27, 2020
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ratione rem laudantium harum totam animi quisquam ex vitae
+                deleniti! Iusto neque tempora repellat quasi ad, sit dolorem?
+                Quasi dolores optio fugit sapiente similique impedit obcaecati
+                quae.
+              </p>
+              <a href="post.html" class="btn btn-dark"
+                ><i class="fas fa-chevron"></i> Read More</a
+              >
+            </div>
+          </div>
+        </dic>
+      </article>
+      <article class="flex-columns">
+        <dic class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="images/blog/blog3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-dark">
+              <h2>Purrfect enemy: can cats and dogs live together?</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posted by
+                <strong>Manny Delgado</strong> | May 1, 2020
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ratione rem laudantium harum totam animi quisquam ex vitae
+                deleniti! Iusto neque tempora repellat quasi ad, sit dolorem?
+                Quasi dolores optio fugit sapiente similique impedit obcaecati
+                quae.
+              </p>
+              <a href="post.html" class="btn btn-light"
+                ><i class="fas fa-chevron"></i> Read More</a
+              >
+            </div>
+          </div>
+        </dic>
+      </article>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy: 2020 - Allico</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
